@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+        //Layout Image
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:layout_margin="10dp"
+            >
+        </LinearLayout>
+
+        //Layout login
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            //User view
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/User"
+                android:textSize="12sp"
+                />
+
+            //Email set
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.08"
+                android:hint="@string/UserExample"
+                android:inputType="textEmailAddress"
+                android:textSize="12sp" />
+
+            //Password text
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="0.04"
+                android:text="@string/Password"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+
+            //Password set
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.08"
+                android:hint="@string/PasswordExample"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                android:autofillHints="" />
+
+            //Login Button
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:hint="@string/Login"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"/>
+
+            //Signup Button
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:hint="@string/Register"
+                android:textSize="12sp"
+                android:textColorHint="@color/teal_700"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:clickable="true"
+                />
+            <TextView
+                android:id="@+id/btnRecover"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:hint="@string/Recover"
+                android:textSize="12sp"
+                android:textColorHint="@color/teal_700"
+                android:layout_marginBottom="10dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:clickable="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
